@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <link rel="stylesheet" href="css/stylesheet.css" />
+    <script src="js/script.js"></script>
+  </head>
+
+  <body class="body day-three">
+    <!-- The expanding image container -->
+    <div class="container">
+      <!-- Close the image -->
+      <span onclick="this.parentElement.style.display='none'" class="closebtn"
+        >&times;</span
+      >
+
+      <!-- Expanded image -->
+      <img id="expandedImg" />
+    </div>
+
+    <!-- Nav Bar -->
+    <div class="empty">
+      <div class="header">
+        <div class="flexbox nav">
+          <a href="index.html" class="flexbox-item nav">Home</a>
+          <a href="day-one.html" class="flexbox-item nav">Day 1: Arrival</a>
+          <a href="day-two.html" class="flexbox-item nav">Day 2: Hiking</a>
+          <a href="#" class="flexbox-item nav">Day 3: Ocean City</a>
+          <a href="day-four.html" class="flexbox-item nav">Day 4: Departure</a>
+          <a href="about.html" class="flexbox-item nav">About Site</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <a href="index.html" class="home"><h1>OCEAN CITY, NJ</h1></a>
+      <h2>Day 3</h2>
+      <p class="description">
+        Our third day, we spend the whole day down in Ocean City, NJ. We spent
+        hours on the beach and the boardwalk. We had boardwalk pizza for dinner!
+      </p>
+      <p class="description">Select a picture.</p>
+    </div>
+
+    <!-- Images -->
+    <div class="flexbox imgPreview">
+      <div class="flexbox-item img">
+        <img
+          src="img/OC-City.jpg"
+          alt="A landscape photo of Ocean City, NJ from the car."
+          width="100%"
+          height="100%"
+          onclick="expandImage(this);"
+        />
+      </div>
+      <div class="flexbox-item img">
+        <img
+          src="img/OC-Boardwalk.jpg"
+          alt="A pic of the boardwalk at an angle."
+          width="100%"
+          height="100%"
+          onclick="expandImage(this);"
+        />
+      </div>
+      <div class="flexbox-item img">
+        <img
+          src="img/OC-Sand.jpg"
+          alt="A pic of the sand from the boardwalk."
+          width="100%"
+          height="100%"
+          onclick="expandImage(this);"
+        />
+      </div>
+      <div class="flexbox-item img">
+        <img
+          src="img/OC-Water.jpg"
+          alt="A pic of the ocean."
+          width="100%"
+          height="100%"
+          onclick="expandImage(this);"
+        />
+      </div>
+      <div class="flexbox-item img">
+        <img
+          src="img/OC-Feet.jpg"
+          alt="Me and my sister's feet in the sand."
+          width="100%"
+          height="100%"
+          onclick="expandImage(this);"
+        />
+      </div>
+      <div class="flexbox-item img">
+        <img
+          src="img/OC-Manco.jpg"
+          alt="The outside of Manco & Manco's on the boardwalk."
+          width="100%"
+          height="100%"
+          onclick="expandImage(this);"
+        />
+      </div>
+      <div class="flexbox-item img">
+        <img
+          src="img/OC-Pizza.jpg"
+          alt="The pizza we ate at Manco & Manco's."
+          width="100%"
+          height="100%"
+          onclick="expandImage(this);"
+        />
+      </div>
+      <div class="flexbox-item img">
+        <img
+          src="img/OC-Inside.jpg"
+          alt="The view from inside the pier."
+          width="100%"
+          height="100%"
+          onclick="expandImage(this);"
+        />
+      </div>
+      <div class="flexbox-item img">
+        <img
+          src="img/OC-SpaceInvaders.jpg"
+          alt="My sister and I played Spave Invaders in an arcade on the boardwalk."
+          width="100%"
+          height="100%"
+          onclick="expandImage(this);"
+        />
+      </div>
+      <div class="flexbox-item img">
+        <img
+          src="img/OC-Pookie.jpg"
+          alt="My mom's cat Pookie."
+          width="100%"
+          height="100%"
+          onclick="expandImage(this);"
+        />
+      </div>
+      <div class="flexbox-item img">
+        <img
+          src="img/OC-Hobbes.jpg"
+          alt="My mom's cat Hobbes."
+          width="100%"
+          height="100%"
+          onclick="expandImage(this);"
+        />
+      </div>
+      <div class="flexbox-item img">
+        <img
+          src="img/OC-Stillen.jpg"
+          alt="My mom's cat Stillen."
+          width="100%"
+          height="100%"
+          onclick="expandImage(this);"
+        />
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <p>
+        This website and all pics & content &copy;2021 Samantha Hamilton. Check
+        out my portfolio
+        <a href="https://shamiltonc.github.io/" class="github">on Github</a>!
+      </p>
+    </div>
+  </body>
+</html>

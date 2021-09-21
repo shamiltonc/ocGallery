@@ -1,0 +1,204 @@
+/* Declare fonts */
+@font-face {
+  font-family: "Palette Mosaic";
+  src: url(../fonts/PaletteMosaic-Regular.ttf); /* This is a relative URL */
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url(../fonts/OpenSans-Bold.ttf);
+  src: url(../fonts/OpenSans-Regular.ttf);
+}
+* {
+  font-family: "Open Sans", Arial, sans-serif;
+}
+/* Body styles */
+.body.home {
+  background-image: url(../img/OC.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.body.day-one {
+  background-image: url(../img/Clouds.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.body.day-two {
+  background-image: url(../img/Kites.jpg);
+  background-size: cover;
+  background-position: right center;
+  background-attachment: fixed;
+}
+.body.day-three {
+  background-image: url(../img/OC-City.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.body.day-four {
+  background-image: url(../img/St-Louis.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.body.about {
+  background-image: url(../img/Boardwalk.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+h1 {
+  font-family: "Palette Mosaic", Arial, sans-serif;
+  font-size: 30px;
+  margin: 0;
+  display: inline-block;
+  color: #dfe0e2;
+  text-decoration: none;
+}
+@media screen and (max-width: 850px) {
+  h1 {
+    font-size: 20px;
+  }
+}
+h1:hover {
+  color: #003249;
+}
+.sidebar {
+  position: relative;
+  width: 25%;
+  padding: 10px;
+}
+@media screen and (max-width: 1200px) {
+  .sidebar {
+    width: 70%;
+  }
+}
+.title {
+  display: inline;
+  margin: 200px 0;
+  color: #003249;
+}
+.subtitle {
+  display: inline;
+  color: #003249;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #0e9595;
+  color: #dfe0e2;
+  text-align: center;
+}
+.github {
+  text-decoration: none;
+  color: #003249;
+}
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #0e9595;
+  z-index: 1;
+}
+.empty {
+  padding: 2%;
+}
+@media screen and (max-width: 1200px) {
+  .empty {
+    padding: 40px;
+  }
+}
+.description {
+  color: #003249;
+}
+/* Other media queries */
+.description.day-four {
+  color: #dfe0e2;
+}
+@media screen and (max-width: 850px) {
+  .description {
+    font-size: 10px;
+  }
+}
+.home.day-4 {
+  color: #003249;
+}
+.home.day-4:hover {
+  color: #dfe0e2;
+}
+/* Image Flexbox styles */
+.flexbox.imgPreview {
+  display: inline-flex;
+  position: relative;
+  flex-wrap: wrap;
+  margin: 10px;
+  width: 20%;
+  background: #0e9595;
+  padding: 10px;
+}
+.flexbox-item.img {
+  flex: 0 0 20%;
+}
+.flexbox-item:hover {
+  cursor: pointer;
+}
+/* Nav styles */
+.flexbox.nav {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  padding: 15px 5px;
+}
+.flexbox-item.nav {
+  flex: 1 0 1fr;
+  padding: 0 50px;
+  margin: 0 5px;
+  color: #dfe0e2;
+  background-color: none;
+  text-decoration: none;
+}
+@media screen and (min-width: 851px) and (max-width: 1250px) {
+  .flexbox-item.nav {
+    font-size: 15px;
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .flexbox-item.nav {
+    font-size: 12px;
+    padding: 5px;
+  }
+}
+.flexbox-item.nav:hover {
+  color: #003249;
+}
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.container {
+  position: absolute;
+  right: 25%;
+  top: 20%;
+  display: none;
+}
+#expandedImg {
+  width: 30%;
+  float: right;
+  padding: 10px;
+  background: #0e9595;
+}
+@media screen and (max-width: 850px) {
+  .container {
+    top: 40%;
+  }
+}
+/* Closable button inside the image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
